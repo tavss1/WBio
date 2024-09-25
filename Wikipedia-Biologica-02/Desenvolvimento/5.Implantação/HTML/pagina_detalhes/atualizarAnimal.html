@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Animal</title>
+  <link rel="icon" type="image/x-icon" href="../pagina_detalhes/assets/logo_branco.png">
+  <link rel="stylesheet" href="styleCRUD.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+          <a href="../home/index.html" class="logo-container">
+            <img class="logo" src="assets\logo_central.png" width="200" alt="logo">
+          </a>
+          <a href="http://127.0.0.1:3000/pagina_detalhes/Login.html" class="user-btn">
+            <i class="bi bi-person-fill text-white fs-3"></i>
+          </a>
+          <a href="../pagina_detalhes/Crud_Animal.html" class="add-btn">
+            <i class="bi bi-plus text-white fs-3"></i>
+          </a>
+        </nav>
+      </header>
+  <main>
+    <form>
+      <label for="id">Id:</label>
+      <input type="text" id="id" name="id" required><br><br>
+
+      <label for="nomepopular">Nome popular:</label>
+      <input type="text" id="nomepopular" name="nomepopular" required hidden><br><br>
+      
+      <label for="filo">Filo:</label>
+      <input type="text" id="filo" name="filo" required hidden><br><br>
+      
+      <label for="classe">Classe:</label>
+      <input type="text" id="classe" name="classe" required hidden><br><br>
+
+      <label for="ordem">Ordem:</label>
+      <input type="text" id="ordem" name="ordem" required hidden><br><br>
+
+      <label for="familia">Família:</label>
+      <input type="text" id="familia" name="familia" required hidden><br><br>
+
+      <label for="genero">Gênero:</label>
+      <input type="text" id="genero" name="genero" required hidden><br><br>
+
+      <label for="especie">Espécie:</label>
+      <input type="text" id="especie" name="especie" required hidden><br><br>
+
+      <label for="peso">Peso:</label>
+      <input type="text" id="peso" name="peso" required hidden><br><br>
+
+      <label for="alimentacao">Alimentação:</label>
+      <input type="text" id="alimentacao" name="alimentacao" required hidden><br><br>
+
+      <label for="habitat">Habitat:</label>
+      <input type="text" id="habitat" name="habitat" required hidden><br><br>
+
+      <label for="descricao">Breve Descrição:</label>
+      <input type="text" id="descricao" name="descricao" required hidden><br><br>
+
+      <label for="imagem">URL da Imagem</label>
+      <input type="text" id="imagem" name="imagem" required hidden><br><br>
+
+      <input type="button" value="Atualizar" onclick="atualizar()">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Wikipedia Biológica</p>
+  </footer>
+
+  <script src="crudanimal.js" type="module"></script>
+  <script type="module">
+    import { atualizar } from './crudanimal.js';
+    window.atualizar = atualizar;
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>  
+</body>
+</html>

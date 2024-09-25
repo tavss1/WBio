@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Adm</title>
+  <link rel="icon" type="image/x-icon" href="../pagina_detalhes/assets/logo_branco.png">
+  <link rel="stylesheet" href="styleCRUD.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!-- add your CSS file here -->
+  <script>
+    function cadastrar() {
+      var nome = document.getElementById("nome").value;
+      var email = document.getElementById("email").value;
+      var senha = document.getElementById("senha").value;
+
+      // Aqui você pode adicionar validações dos campos, se necessário
+
+      // Simulação do envio dos dados para um servidor
+      // Neste exemplo, estamos apenas exibindo os dados no console
+      console.log("Nome: " + nome);
+      console.log("Email: " + email);
+      console.log("Senha: " + senha);
+
+      // Limpa os campos após o envio
+      document.getElementById("nome").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("senha").value = "";
+
+      // Você pode adicionar aqui um redirecionamento ou outra ação após o cadastro
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+          <a href="../home/index.html" class="logo-container">
+            <img class="logo" src="assets\logo_central.png" width="200" alt="logo">
+          </a>
+          <a href="http://127.0.0.1:3000/pagina_detalhes/Login.html" class="user-btn">
+            <i class="bi bi-person-fill text-white fs-3"></i>
+          </a>
+          <a href="../pagina_detalhes/Crud_Animal.html" class="add-btn">
+            <i class="bi bi-plus text-white fs-3"></i>
+          </a>
+        </nav>
+      </header>
+  <main>
+    <form>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br><br>
+
+      
+      
+      <a href="../home/index.html"><input type="button" value="Login" onclick="cadastrar()"></a>
+      <a href="./Crud_Adm.html"><input type="button" value="Cadastrar"></a>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; Wikipedia Biológica</p>
+  </footer>
+</body>
+</html>
