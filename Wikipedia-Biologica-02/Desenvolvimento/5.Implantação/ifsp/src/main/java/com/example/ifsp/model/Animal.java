@@ -1,7 +1,10 @@
 package com.example.ifsp.model;
 
+import com.example.ifsp.repository.GeneroRepository;
+import com.example.ifsp.service.GeneroService;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name="animais")
@@ -19,21 +22,17 @@ public class Animal {
 
     private String peso;
 
-    private String especie;
-
-    private String genero;
-
-    private String familia;
-
-    private String ordem;
-
-    private String classe;
-
-    private String filo;
-
     private String descricao;
 
     private String imagem;
+
+    private String especie;
+
+    @ManyToOne
+    @JoinColumn(name = "genero_id", nullable = false)
+    private Genero genero;
+
+
 
     public Animal(DadosAnimal dadosAnimal) {
         this.nomePopular = dadosAnimal.nome();
@@ -49,28 +48,22 @@ public class Animal {
         }
 
         this.especie = nomeCientifico;
-        this.genero = dadosAnimal.taxonomia().genero();
-        this.familia = dadosAnimal.taxonomia().familia();
-        this.ordem = dadosAnimal.taxonomia().ordem();
-        this.filo = dadosAnimal.taxonomia().filo();
-        this.classe = dadosAnimal.taxonomia().classe();
+
+
     }
 
     public Animal() {}
 
-    public Animal(DadosAnimal2 dadosAnimal2){
+    public Animal(DadosAnimal2 dadosAnimal2, Genero genero){
         this.nomePopular = dadosAnimal2.nomePopular();
         this.habitat = dadosAnimal2.habitat();
         this.alimentacao = dadosAnimal2.alimentacao();
         this.peso = dadosAnimal2.peso();
         this.especie = dadosAnimal2.especie();
-        this.genero = dadosAnimal2.genero();
-        this.familia = dadosAnimal2.filo();
-        this.ordem = dadosAnimal2.ordem();
-        this.classe = dadosAnimal2.classe();
-        this.filo = dadosAnimal2.filo();
         this.descricao = dadosAnimal2.descricao();
         this.imagem = dadosAnimal2.imagem();
+
+        this.genero = genero;
     }
 
     @Override
@@ -82,11 +75,7 @@ public class Animal {
                 ", alimentacao='" + alimentacao +
                 ", peso='" + peso +
                 ", especie='" + especie +
-                ", genero='" + genero +
-                ", familia='" + familia +
-                ", ordem='" + ordem +
-                ", classe='" + classe +
-                ", filo='" + filo + '}';
+                '}';
     }
 
     public int getId() {
@@ -137,46 +126,6 @@ public class Animal {
         this.especie = especie;
     }
 
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public String getFamilia() {
-        return familia;
-    }
-
-    public void setFamilia(String familia) {
-        this.familia = familia;
-    }
-
-    public String getOrdem() {
-        return ordem;
-    }
-
-    public void setOrdem(String ordem) {
-        this.ordem = ordem;
-    }
-
-    public String getClasse() {
-        return classe;
-    }
-
-    public void setClasse(String classe) {
-        this.classe = classe;
-    }
-
-    public String getFilo() {
-        return filo;
-    }
-
-    public void setFilo(String filo) {
-        this.filo = filo;
-    }
-
     public String getDescricao() {
         return descricao;
     }
@@ -191,5 +140,13 @@ public class Animal {
 
     public void setImagem(String imagem) {
         this.imagem = imagem;
+    }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
 }

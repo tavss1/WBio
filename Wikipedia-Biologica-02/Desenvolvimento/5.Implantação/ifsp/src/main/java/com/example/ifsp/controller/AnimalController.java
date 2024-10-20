@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/animais")
+@CrossOrigin(origins = "http://localhost:5500")
 public class AnimalController {
 
     @Autowired
@@ -65,9 +66,9 @@ public class AnimalController {
     }
 
     @PutMapping("/autalizarAnimal/{id}")
-    public ResponseEntity<Animal> alterarAnimal(@PathVariable Long id, @RequestBody Animal animal) {
-        service.atualizarAnimal(id, animal);
-        return ResponseEntity.ok().body(animal);
+    public ResponseEntity<DadosAnimal2> alterarAnimal(@PathVariable Long id, @RequestBody DadosAnimal2 dadosAnimal2) {
+        service.atualizarAnimal(id, dadosAnimal2);
+        return ResponseEntity.ok().body(dadosAnimal2);
     }
 
     @PutMapping("/removerAnimal/{id}")
