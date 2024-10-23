@@ -78,7 +78,7 @@ function lidarComErro(mensagemErro) {
 
 
 function geraAnimais(){
-    const url = ['/filtros']
+    const url = ['/animais']
 
     Promise.all(url.map(u => getDados(u)))
     .then(data => {
