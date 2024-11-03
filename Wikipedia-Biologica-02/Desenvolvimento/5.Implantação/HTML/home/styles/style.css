@@ -1,0 +1,275 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #065eac;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #03703c;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+  }
+  
+  /* Hero Section Styles */
+  
+  .product-hero {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .product-hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-hero p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Product Info Styles */
+  
+  .product-info {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-info ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-info li {
+    margin-bottom: 10px;
+  }
+  
+  .product-info strong {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Product Pricing Styles */
+  
+  .product-pricing {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-pricing h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-pricing p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #337ab7;
+  }
+  
+  .btn-add-to-cart {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-add-to-cart:hover {
+    background-color: #23527c;
+  }
+  
+  /* Product Description Styles */
+  
+  .product-description {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-description p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Product Reviews Styles */
+  
+  .product-reviews {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-reviews ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-reviews li {
+    margin-bottom: 10px;
+  }
+  
+  .product-reviews strong {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #03703c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+
+
+  .pesquisar{
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.pesquisar-bloco{
+    position: relative;
+    width: 500px;
+    text-align: center;
+    font: "Arial";
+}
+
+.imagem-pesquisa{
+    margin-right: 10px;
+}
+.btn {
+  /* styling the button */
+  background-color: #03703c; /* green background */
+  color: #ffffff; /* white text */
+  border: none; /* no border */
+  padding: 10px 20px; /* padding */
+  font-size: 16px; /* font size */
+  cursor: pointer; /* change cursor shape on hover */
+}
+
+.btn:hover {
+  /* hover effect */
+  background-color: #03703c; /* darker green background on hover */
+}
+
+.btn:active {
+  /* active effect */
+  background-color: #03703c; /* darker green background on click */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a shadow on click */
+}
+
+  
+  
+.product-info {
+  /* add some padding and margin to the section */
+  padding: 20px;
+  margin: 20px;
+  /* add a background color and border */
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  /* add some space between the divs */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.informacao {
+  /* add some padding and margin to the divs */
+  padding: 20px;
+  margin: 20px;
+  /* add a background color and border */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  /* make the divs take up equal space */
+  flex: 1;
+}
+
+.informacao h2 {
+  /* style the headings */
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.informacao ul {
+  /* style the lists */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.informacao li {
+  /* style the list items */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.informacao li strong {
+  /* style the strong elements */
+  font-weight: 800;
+  margin-right: 10px;
+  font-size: 19px;
+}
+
+.descricao {
+  /* style the paragraph */
+  text-align: justify;
+  font-weight: 600;
+}

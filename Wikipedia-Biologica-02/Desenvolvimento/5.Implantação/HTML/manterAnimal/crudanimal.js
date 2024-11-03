@@ -1,4 +1,4 @@
-import getDados from "../home/getDados.js";
+import getDados from "../conexao/getDados.js";
 
 
 export function cadastrar() {
