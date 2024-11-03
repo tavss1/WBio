@@ -4,10 +4,8 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record DadosAdministrador(
-        @JsonAlias("nome") String nome,
+public record DadosLogin(
         @JsonAlias("email") String email,
-        @JsonAlias("lattes") String lattes,
         @JsonAlias("senha") String senha
-        ) {
+) {
 }

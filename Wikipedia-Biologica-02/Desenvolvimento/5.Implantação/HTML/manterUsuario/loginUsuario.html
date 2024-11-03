@@ -9,28 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!-- add your CSS file here -->
-  <script>
-    function cadastrar() {
-      var nome = document.getElementById("nome").value;
-      var email = document.getElementById("email").value;
-      var senha = document.getElementById("senha").value;
-
-      // Aqui você pode adicionar validações dos campos, se necessário
-
-      // Simulação do envio dos dados para um servidor
-      // Neste exemplo, estamos apenas exibindo os dados no console
-      console.log("Nome: " + nome);
-      console.log("Email: " + email);
-      console.log("Senha: " + senha);
-
-      // Limpa os campos após o envio
-      document.getElementById("nome").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("senha").value = "";
-
-      // Você pode adicionar aqui um redirecionamento ou outra ação após o cadastro
-    }
-  </script>
 </head>
 <body>
     <div id="header-container"></div>
@@ -42,15 +20,19 @@
       
       <label for="senha">Senha:</label>
       <input type="password" id="senha" name="senha" required><br><br>
-
       
-      
-      <a href="../home/index.html"><input type="button" value="Login" onclick="cadastrar()"></a>
-      <a href="./Crud_Adm.html"><input type="button" value="Cadastrar"></a>
+      <!--<button onclick="login()" class="botaoSumbitUsuario">Login</button>-->
+      <input type="button" value="Login" onclick="login()">
     </form>
   </main>
   <div id="footer-container"></div>
 
   <script type="module" src="../componentes/adicionarHeaderMaior.js"></script>
+  <script src="loginUsuario.js" type="module"></script>
+
+  <script type="module">
+    import { login } from './loginUsuario.js';
+    window.login = login;
+  </script>
 </body>
 </html>

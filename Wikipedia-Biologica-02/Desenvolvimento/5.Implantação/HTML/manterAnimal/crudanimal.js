@@ -55,3 +55,15 @@ export function cadastrar() {
     });
 }
 
+async function checkSession() {
+    const response = await fetch('http://localhost:8080/user/dashboard', {
+        method: "GET",
+        credentials: "include"
+    });
+    if (response.status === 401) {
+        window.location.href = '../manterUsuario/loginUsuario.html';
+    }
+}
+
+window.onload = checkSession;
+

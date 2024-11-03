@@ -60,7 +60,16 @@ body {
     border-radius: 5px;
   }
 
-  input[type="button"] {
+  .botaoSumbitUsuario {
+    background-color: #03703c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="button"]{
     background-color: #03703c;
     color: #fff;
     padding: 10px 20px;
@@ -70,6 +79,10 @@ body {
   }
 
   input[type="button"]:hover {
+    background-color: #555;
+  }
+
+  .botaoSumbitUsuario:hover {
     background-color: #555;
   }
 
