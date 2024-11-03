@@ -15,84 +15,75 @@
 </head>
 
 <body>
+  
+  <div id="header-container"></div>
+
   <main>
-    <header>
-      <nav class="nav-container">
-        <a href="../home/index.html" class="logo-container">
-          <img class="logo" src="assets\logo_central.png" width="200" alt="logo">
-        </a>
-        <a href="../pagina_detalhes/Login.html" class="user-btn">
-          <i class="bi bi-person-fill text-white fs-3"></i>
-        </a>
-        <a href="../pagina_detalhes/Crud_Animal.html" class="add-btn">
-          <i class="bi bi-plus text-white fs-3"></i>
-        </a>
-      </nav>
-    </header>
-  <div class="pesquisar d-flex justify-content-center">
-    <a class="imagem-pesquisa"><img src="./assets/SearchIcon.png" width="30px"></a>
-    <form class = "formPesquisa" action=" ">
-      <input type="text" class="pesquisar-bloco" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" alt="pesquisar" placeholder="Digite o nome do Animal">
-      <div class="btn-group dropend">
-    </form>
-      <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-        Filtrar
-      </button>
-      <ul class="dropdown-menu">
-        <div class="btn-group dropend filtros">
-          <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-            Filos
-          </button>
-          <ul class="dropdown-menu" id="filos">
+    
+  
+    <div class="pesquisar d-flex justify-content-center">
+      <a class="imagem-pesquisa"><img src="./assets/SearchIcon.png" width="30px"></a>
+      <form class = "formPesquisa" action=" ">
+        <input type="text" class="pesquisar-bloco" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" alt="pesquisar" placeholder="Digite o nome do Animal">
+        <div class="btn-group dropend">
+      </form>
+        <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+          Filtrar
+        </button>
+        <ul class="dropdown-menu">
+          <div class="btn-group dropend filtros">
+            <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Filos
+            </button>
+            <ul class="dropdown-menu" id="filos">
 
-          </ul>
-        </div>
-        
-        <div class="btn-group dropend filtros justify-content-center">
-          <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-            Classes
-          </button>
-          <ul class="dropdown-menu" id="classes">
+            </ul>
+          </div>
+          
+          <div class="btn-group dropend filtros justify-content-center">
+            <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Classes
+            </button>
+            <ul class="dropdown-menu" id="classes">
 
-          </ul>
-        </div>
-        
-        <div class="btn-group dropend filtros">
-          <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-            Ordens
-          </button>
-          <ul class="dropdown-menu" id="ordens">
+            </ul>
+          </div>
+          
+          <div class="btn-group dropend filtros">
+            <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Ordens
+            </button>
+            <ul class="dropdown-menu" id="ordens">
 
-          </ul>
-        </div>
-        
-        <div class="btn-group dropend filtros">
-          <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-            Familias
-          </button>
-          <ul class="dropdown-menu" id="familias">
+            </ul>
+          </div>
+          
+          <div class="btn-group dropend filtros">
+            <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Familias
+            </button>
+            <ul class="dropdown-menu" id="familias">
 
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <div class="btn-group dropend filtros">
-          <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-            Generos
-          </button>
-          <ul class="dropdown-menu" id="generos">
+          <div class="btn-group dropend filtros">
+            <button type="button" class="btn btn-secondary dropdown-toggle bg-success" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              Generos
+            </button>
+            <ul class="dropdown-menu" id="generos">
 
-          </ul>
-        </div>
-      </ul>
+            </ul>
+          </div>
+        </ul>
+      </div>
     </div>
-  </div>
-   <div class="container row mx-auto g-4 my-5" id="lista-animais">
+    <div class="container row mx-auto g-4 my-5" id="lista-animais">
 
-  </div>
-    </main>
-    <footer>
-      <p>&copy; Wikipedia Biológica</p>
-    </footer>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -103,6 +94,8 @@
     <script type="module">
       import { clickFiltro } from './animais.js';
       window.clickFiltro = clickFiltro;
+
+      import {loadComponent} from '/animais.js';
     </script>
 </body> 
 </html>
