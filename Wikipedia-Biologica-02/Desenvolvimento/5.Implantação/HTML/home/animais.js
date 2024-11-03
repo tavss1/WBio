@@ -78,7 +78,7 @@ function lidarComErro(mensagemErro) {
 
 
 function geraAnimais(){
-    const url = ['/filtros']
+    const url = ['/animais']
 
     Promise.all(url.map(u => getDados(u)))
     .then(data => {
@@ -205,16 +205,5 @@ export function clickFiltro(event){
         lidarComErro("Ocorreu um erro ao carregar os dados. ")
     });
 }
-
-export function loadComponent(componentId, filePath) {
-  fetch(filePath)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(componentId).innerHTML = data;
-    });
-}
-
-loadComponent("header-container", "../componentes/header.html");
-loadComponent("footer-container", "../componentes/footer.html");
 
 geraAnimais();

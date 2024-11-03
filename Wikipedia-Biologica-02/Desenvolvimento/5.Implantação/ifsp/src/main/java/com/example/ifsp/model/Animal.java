@@ -26,6 +26,7 @@ public class Animal {
 
     private String imagem;
 
+    // Utilizar ENUM de espécies ao invés de uma String ( cadastro mais fácil )
     private String especie;
 
     @ManyToOne
