@@ -5,25 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro Adm</title>
   <link rel="icon" type="image/x-icon" href="../pagina_detalhes/assets/logo_branco.png">
-  <link rel="stylesheet" href="styleCRUD.css"> 
+  <link rel="stylesheet" href="./style/styleUsuario.css"> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!-- add your CSS file here -->  
 </head>
 <body>
-  <header>
-    <nav class="nav-container">
-      <a href="../home/index.html" class="logo-container">
-        <img class="logo" src="assets\logo_central.png" width="200" alt="logo">
-      </a>
-      <a href="http://127.0.0.1:3000/pagina_detalhes/Login.html" class="user-btn">
-        <i class="bi bi-person-fill text-white fs-3"></i>
-      </a>
-      <a href="../pagina_detalhes/Crud_Animal.html" class="add-btn">
-        <i class="bi bi-plus text-white fs-3"></i>
-      </a>
-    </nav>
-  </header>
+  <div id="header-container"></div>
   <main>
     <form>
       <label for="nome">Nome:</label>
@@ -43,10 +31,10 @@
 
     </form>
   </main>
-  <footer>
-    <p>&copy; Wikipedia Biológica</p>
-  </footer>
+  <div id="footer-container"></div>
+  
   <script src="crudadm.js" type="module"></script>
+  <script src="../componentes/adicionarHeaderMaior.js" type="module"></script>
   <script type="module">
     import { cadastrarAdm } from './crudadm.js';
     window.cadastrarAdm = cadastrarAdm;

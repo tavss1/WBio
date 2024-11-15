@@ -1,4 +1,4 @@
-import getDados from "./getDados.js";
+import getDados from "../conexao/getDados.js";
 
 const elementos = {
     animais: document.getElementById("lista-animais"),
@@ -44,7 +44,7 @@ function carregarAnimais(elemento, dados){
       <div class="card-body">
         <h5 class="card-title">${animal.nomePopular}</h5>
         <p class="card-text"><i>${animal.genero} ${animal.especie}</i></p>
-        <a href="../pagina_detalhes/detalhes.html?id=${animal.id}" class="btn btn-primary text-light botao-produtos border-0 rounded-0">Ver mais</a>
+        <a href="../visualizarDados/visualizarDados.html?id=${animal.id}" class="btn btn-primary text-light botao-produtos border-0 rounded-0">Ver mais</a>
       </div>
     </div>
   </div>

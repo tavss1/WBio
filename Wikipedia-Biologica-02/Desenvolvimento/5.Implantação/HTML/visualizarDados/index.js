@@ -1,4 +1,4 @@
-import getDados from "../home/getDados.js";
+import getDados from "../conexao/getDados.js";
 
 const params = new URLSearchParams(window.location.search);
 const animalId = params.get('id');

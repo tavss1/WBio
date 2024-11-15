@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Adm</title>
+  <link rel="icon" type="image/x-icon" href="../pagina_detalhes/assets/logo_branco.png">
+  <link rel="stylesheet" href="./style/styleUsuario.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!-- add your CSS file here -->
+</head>
+<body>
+    <div id="header-container"></div>
+  <main>
+    <form>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br><br>
+      
+      <!--<button onclick="login()" class="botaoSumbitUsuario">Login</button>-->
+      <input type="button" value="Login" onclick="login()">
+    </form>
+  </main>
+  <div id="footer-container"></div>
+
+  <script type="module" src="../componentes/adicionarHeaderMaior.js"></script>
+  <script src="loginUsuario.js" type="module"></script>
+
+  <script type="module">
+    import { login } from './loginUsuario.js';
+    window.login = login;
+  </script>
+</body>
+</html>

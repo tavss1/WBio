@@ -1,4 +1,4 @@
-import getDados from "../home/getDados.js";
+import getDados from "../conexao/getDados.js";
 
 
 export function cadastrar() {
@@ -54,4 +54,16 @@ export function cadastrar() {
         console.error('Erro de conexão:', error);
     });
 }
+
+async function checkSession() {
+    const response = await fetch('http://localhost:8080/user/dashboard', {
+        method: "GET",
+        credentials: "include"
+    });
+    if (response.status === 401) {
+        window.location.href = '../manterUsuario/loginUsuario.html';
+    }
+}
+
+window.onload = checkSession;
 
