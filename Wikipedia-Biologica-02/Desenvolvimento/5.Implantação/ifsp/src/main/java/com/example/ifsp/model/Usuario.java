@@ -1,10 +1,22 @@
 package com.example.ifsp.model;
 
 import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
-public class Usuario {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(of = "id")
+public class Usuario implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
@@ -24,61 +36,39 @@ public class Usuario {
         this.perfil = perfil;
     }
 
-    public Usuario(Long id, String nome, String email, String lattes, Perfil perfil) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.lattes = lattes;
-        this.perfil = perfil;
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        if(this.perfil == Perfil.ADMIN) return List.of(new SimpleGrantedAuthority("ROLE_ADMIN"), new SimpleGrantedAuthority("ROLE_CURADOR"));
+        else return List.of(new SimpleGrantedAuthority("ROLE_CURADOR"));
     }
 
-    public Usuario() {}
-
-    public Long getId() {
-        return id;
+    @Override
+    public String getPassword() {
+        return this.senha;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    @Override
+    public String getUsername() {
+        return this.nome;
     }
 
-    public String getNome() {
-        return nome;
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
     }
 
-    public String getEmail() {
-        return email;
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getLattes() {
-        return lattes;
-    }
-
-    public void setLattes(String lattes) {
-        this.lattes = lattes;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public Perfil getPerfil() {
-        return perfil;
-    }
-
-    public void setPerfil(Perfil perfil) {
-        this.perfil = perfil;
+    @Override
+    public boolean isEnabled() {
+        return true;
     }
 }
