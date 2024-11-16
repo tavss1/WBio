@@ -1,2 +1,4 @@
-package com.example.ifsp.dto;public class LoginResponseDTO {
+package com.example.ifsp.dto;
+
+public record LoginResponseDTO(String token) {
 }
