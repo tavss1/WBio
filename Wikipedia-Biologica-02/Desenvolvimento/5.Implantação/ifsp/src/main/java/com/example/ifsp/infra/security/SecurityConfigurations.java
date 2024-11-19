@@ -29,7 +29,9 @@ public class SecurityConfigurations {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize.
-                        requestMatchers(HttpMethod.GET, "/animais").hasRole("ADMIN").
+                        requestMatchers(HttpMethod.GET, "/animais").permitAll().
+                        requestMatchers(HttpMethod.POST, "/animais/adicionarAnimal").permitAll().
+                        requestMatchers(HttpMethod.POST, "/animais/getDadosAnimal/**").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/login").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
                 )

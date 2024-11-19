@@ -33,6 +33,7 @@ export function cadastrar() {
 
     // Fazer requisição POST para adicionar o animal
     fetch('http://localhost:8080/animais/adicionarAnimal', {
+        mode: 'no-cors',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -55,7 +56,7 @@ export function cadastrar() {
     });
 }
 
-async function checkSession() {
+/*async function checkSession() {
     const response = await fetch('http://localhost:8080/user/dashboard', {
         method: "GET",
         credentials: "include"
@@ -65,5 +66,5 @@ async function checkSession() {
     }
 }
 
-window.onload = checkSession;
+window.onload = checkSession;*/
 
