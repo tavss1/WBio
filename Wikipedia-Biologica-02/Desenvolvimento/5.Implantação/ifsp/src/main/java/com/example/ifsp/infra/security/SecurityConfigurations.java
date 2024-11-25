@@ -31,9 +31,11 @@ public class SecurityConfigurations {
                 .authorizeHttpRequests(authorize -> authorize.
                         requestMatchers(HttpMethod.GET, "/animais").permitAll().
                         requestMatchers(HttpMethod.POST, "/animais/adicionarAnimal").permitAll().
-                        requestMatchers(HttpMethod.POST, "/animais/getDadosAnimal/**").permitAll().
+                        requestMatchers(HttpMethod.GET, "/animais/getDadosAnimal/**").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/login").permitAll().
+                        requestMatchers(HttpMethod.OPTIONS, "/auth/login").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
+                        .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
