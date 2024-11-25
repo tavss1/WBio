@@ -1,13 +1,11 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
 # Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/dist
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/tmp
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/out-tsc
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/bazel-out
 
 # Node
-/node_modules
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/node_modules
 npm-debug.log
 yarn-error.log
 
@@ -29,13 +27,13 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/.angular/cache
 .sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/connect.lock
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/coverage
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/libpeerconnection.log
 testem.log
-/typings
+Wikipedia-Biologica-02/Desenvolvimento/5.Implantação/wbio/typings
 
 # System files
 .DS_Store

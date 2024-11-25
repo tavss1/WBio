@@ -1,0 +1,50 @@
+.card-animal{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1rem;
+
+    img {
+        border-radius: 10px;
+        width: auto;
+        height: 200px;
+    }
+
+    box-shadow: 5px 5px 0px #03703c;
+    background-color: white;
+}
+
+.desc-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+
+    .nomePopular{
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    .especie{
+        font-size: 0.9rem;
+    }
+}
+
+.acoes{
+
+    display: flex;
+    justify-content: flex-end;
+
+    button img{
+        width: 30px;
+        height: 30px;
+    }
+
+    button{
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+    }
+    
+}

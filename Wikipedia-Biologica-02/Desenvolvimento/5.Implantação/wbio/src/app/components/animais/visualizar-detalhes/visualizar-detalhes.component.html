@@ -1,0 +1,29 @@
+<section class="container">
+        <img src="{{animal.imagem}}" alt="" width="500rem">
+
+        <div class="nome-especie-animal">
+            <p class="nomePopular">{{animal.nomePopular}}</p>
+            <p>{{animal.especie}} {{animal.genero}}</p>
+        </div>
+        <div class="detalhes-animal">
+            <div class="info-animais-taxonomia box">
+                <h2>Taxonomia</h2>
+                <p>Filo: <strong>{{animal.filo}}</strong></p>
+                <p>Classe: <strong>{{animal.classe}}</strong></p>
+                <p>Ordem: <strong>{{animal.ordem}}</strong></p>
+                <p>Familia: <strong>{{animal.familia}}</strong></p>
+                <p>Gênero: <strong>{{animal.genero}}</strong></p>
+                <p>Espécie: <strong>{{animal.especie}}</strong></p>
+            </div>
+            <div class="info-animais-geral box">
+                <h2>Características</h2>
+                <p>Habitat: <strong>{{animal.habitat}}</strong></p>
+                <p>Alimentação: <strong>{{animal.alimentacao}}</strong></p>
+                <p>Peso: <strong>{{animal.peso}}</strong></p>
+            </div>
+            <div class="info-animais-descricao box">
+                <h2>Descrição</h2>
+                <p>{{animal.descricao}}</p>
+            </div>
+        </div>
+</section>

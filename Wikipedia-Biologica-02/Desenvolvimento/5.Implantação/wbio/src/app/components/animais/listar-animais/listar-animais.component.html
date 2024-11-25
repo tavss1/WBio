@@ -1,0 +1,19 @@
+<section class="container">
+    <div class="pesquisar-animal">
+        <img src="SearchIcon.png" alt="Icone pesquisa" width="20px" height="20">
+        <input type="text" name="pesquisarAnimal" id="pesquisarAnimal" class="input-pesquisar-animal">
+        <button class="filtrar-animais">Filtrar</button>
+    </div>
+
+    <div class="mural" *ngIf="listaAnimais.length > 0, else semAnimais">
+        <div *ngFor="let animal of listaAnimais">
+            <app-animal [animal]="animal"></app-animal>
+        </div>
+    </div>
+</section>
+
+<ng-template #semAnimais>
+    <div class="sem-animais">
+        <p>Ainda não há animais cadastrados !</p>
+    </div>
+</ng-template>

@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisar-animal{
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.input-pesquisar-animal{
+    width: 35rem;
+    height: 1.5rem;
+}
+
+.filtrar-animais{
+    width: 5rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.2rem;
+
+    background-color: #03703c; /* green background */
+    color: #ffffff; /* white text */
+    border: none; /* padding */
+    font-size: 16px; /* font size */
+    cursor: pointer; /* change cursor shape on hover */
+}
+
+.filtrar-animais:hover {
+    background-color: #014324;
+    
+}
+
+.filtrar-animais:active{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sem-animais{
+    text-align: center;
+    padding: 2rem 0 5rem;
+}
+
+.mural{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0 2rem;
+}

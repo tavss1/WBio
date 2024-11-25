@@ -1,0 +1,16 @@
+<div class="card-animal" >
+    <img src="{{animal.imagem}}" alt="Foto animal" routerLink="/animais/visualizarDetalhes/{{animal.id}}">
+    <div class="desc-card">
+        <p class="nomePopular">{{animal.nomePopular}}</p>
+        <p class="especie">{{animal.especie}} {{animal.genero}}</p>
+    </div>
+    <div class="acoes"> <!--Fazer esses botões sumirem quando o usuario não for um ADMIN-->
+        <button class="editar"> 
+            <img src="editarAnimal.png" alt="Editar animal">
+        </button>
+
+        <button class="excluir">
+            <img src="excluirAnimal.png" alt="Excluir animal">
+        </button>
+    </div>
+</div>
