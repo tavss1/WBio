@@ -34,7 +34,8 @@ public class SecurityConfigurations {
                         requestMatchers(HttpMethod.GET, "/animais/getDadosAnimal/**").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/login").permitAll().
                         requestMatchers(HttpMethod.OPTIONS, "/auth/login").permitAll().
-                        requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
+                        requestMatchers(HttpMethod.POST, "/auth/register").permitAll().
+                        requestMatchers(HttpMethod.GET, "/auth/check").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
