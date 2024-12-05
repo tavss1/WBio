@@ -16,7 +16,7 @@ jobs:
               with:
                 node-version: 22
                 cache: 'npm'
-                cache-dependency-path: package-lock.json
+                cache-dependency-path: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\Wikipedia-Biologica-02\Desenvolvimento\3.Implementação\wbio\package-lock.json
             - name: Update 
               run: npm update
             - name: Install dependencies
