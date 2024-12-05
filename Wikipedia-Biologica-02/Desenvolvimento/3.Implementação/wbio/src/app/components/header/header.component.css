@@ -13,6 +13,10 @@
 .header-logo{
     align-items: center;
     position: relative;
+
+    img {
+        cursor: pointer;
+    }
     
 }
 
@@ -23,4 +27,8 @@
     gap: 15px;
 
     margin: 25px;
+
+    img{
+        cursor: pointer;
+    }
 }

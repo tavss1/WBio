@@ -7,7 +7,7 @@
 
     <div class="mural" *ngIf="listaAnimais.length > 0, else semAnimais">
         <div *ngFor="let animal of listaAnimais">
-            <app-animal [animal]="animal"></app-animal>
+            <app-animal [animal]="animal" [Admin]="isAdmin()"></app-animal>
         </div>
     </div>
 </section>

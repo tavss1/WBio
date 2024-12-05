@@ -8,7 +8,7 @@ import { Animal } from './animal';
 })
 export class AnimalService {
 
-  private readonly API = "http://localhost:8080"
+  private readonly API = "http://ec2-44-214-104-15.compute-1.amazonaws.com:8080"
 
   constructor(private http : HttpClient) { }
 

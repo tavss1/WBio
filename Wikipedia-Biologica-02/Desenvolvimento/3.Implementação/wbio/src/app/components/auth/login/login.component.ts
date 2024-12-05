@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AutenticacaoService } from '../autenticacao.service';
+import { AutenticacaoService } from '../login.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
