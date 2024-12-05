@@ -25,3 +25,13 @@ jobs:
               run: docker build -t brunotavaresssssasasasas/aws-docker .
             - name: Push image docker
               run: docker push brunotavaresssssasasasas/aws-docker
+    deploy:
+        needs: build
+        runs-on: self-hosted
+        steps:
+            - name: Pull image from docker hub
+              run: docker pull brunotavaresssssasasasas/aws-docker
+            - name: Remove docker container
+              run: docker rm -f aws-docker
+            - name: Run docker container
+              run: docker run -d -p 8080:8080 --name aws-docker brunotavaresssssasasasas/aws-docker
