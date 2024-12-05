@@ -34,4 +34,4 @@ jobs:
             - name: Remove docker container
               run: docker rm -f aws-docker
             - name: Run docker container
-              run: docker run -d -p 8080:8000 --name aws-docker brunotavaresssssasasasas/aws-docker
+              run: docker run -d -p 8000:8000 --name aws-docker brunotavaresssssasasasas/aws-docker
