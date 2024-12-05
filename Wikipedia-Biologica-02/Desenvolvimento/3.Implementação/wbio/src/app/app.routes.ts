@@ -1,8 +1,8 @@
-import { EditarCadastrarAnimalComponent } from './components/animais/editar-cadastrar-animal/editar-cadastrar-animal.component';
 import { Routes } from '@angular/router';
 import { ListarAnimaisComponent } from './components/animais/listar-animais/listar-animais.component';
 import { VisualizarDetalhesComponent } from './components/animais/visualizar-detalhes/visualizar-detalhes.component';
 import { LoginComponent } from './components/auth/login/login.component';
+import { CadastrarAnimalComponent } from './components/animais/cadastrar-animal/cadastrar-animal.component';
 
 export const routes: Routes = [
     {
@@ -23,7 +23,7 @@ export const routes: Routes = [
         component: LoginComponent
     },
     {
-        path:'formularioAnimal',
-        component: EditarCadastrarAnimalComponent
+        path:'cadastrarAniaml',
+        component: CadastrarAnimalComponent
     }
 ];

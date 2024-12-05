@@ -1,0 +1,76 @@
+<section class="formulario container">
+    <h2>Cadastrar / Editar Animal </h2>
+    <div class="form">
+        <div class="linha-form">
+            <div class="campo">
+            <label for="nomePopular">Nome Popular</label>
+            <input type="text" name="nomePopular" id="nomePopular" [(ngModel)]="animal.nomePopular">
+            </div>
+        
+            <div class="campo">
+            <label for="habitat">Habitat</label>
+            <input type="text" name="habitat" id="habitat" [(ngModel)]="animal.habitat">
+            </div>
+        </div>
+        <div class="linha-form">
+            <div class="campo">
+            <label for="alimentacao">Alimentação</label>
+            <input type="text" name="alimentacao" id="alimentacao" [(ngModel)]="animal.alimentacao">
+            </div>
+        
+            <div class="campo">
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso" [(ngModel)]="animal.peso">
+            </div>
+        </div>
+        <div class="linha-form">
+            <div class="campo">
+            <label for="filo">Filo</label>
+            <input type="text" name="filo" id="filo" [(ngModel)]="animal.filo">
+            </div>
+        
+            <div class="campo">
+            <label for="classe">Classe</label>
+            <input type="text" name="classe" id="classe" [(ngModel)]="animal.classe">
+            </div>
+        </div>
+        <div class="linha-form">
+            <div class="campo">
+            <label for="ordem">Ordem</label>
+            <input type="text" name="ordem" id="ordem" [(ngModel)]="animal.ordem">
+            </div>
+        
+            <div class="campo">
+            <label for="familia">Familia</label>
+            <input type="text" name="familia" id="familia" [(ngModel)]="animal.familia">
+            </div>
+        </div>
+        <div class="linha-form">
+            <div class="campo">
+            <label for="genero">Genero</label>
+            <input type="text" name="genero" id="genero" [(ngModel)]="animal.genero">
+            </div>
+        
+            <div class="campo">
+            <label for="especie">Especie</label>
+            <input type="text" name="especie" id="especie" [(ngModel)]="animal.especie">
+            </div>
+        </div>
+        <div class="linha-form">
+            <div class="campo">
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" id="descricao" [(ngModel)]="animal.descricao">
+            </div>
+        
+            <div class="campo">
+            <label for="imagem">Imagem ( url )</label>
+            <input type="text" name="imagem" id="imagem" [(ngModel)]="animal.imagem">
+            </div>
+        </div>
+        <br>
+        <div class="linha-form botoes">
+            <button type="button" class="btnForm btnEnviar">Enviar</button>
+            <button type="button" class="btnForm btnCancelar">Cancelar</button>
+        </div>
+        </div>
+</section>

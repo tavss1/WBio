@@ -8,7 +8,7 @@ import { tap } from 'rxjs';
 })
 export class AutenticacaoService {
 
-  private readonly API = "http://ec2-44-214-104-15.compute-1.amazonaws.com:8080"
+  private readonly API = "http://ec2-44-223-8-200.compute-1.amazonaws.com:8080"
 
   constructor(private http : HttpClient) { }
 
