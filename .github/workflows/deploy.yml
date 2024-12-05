@@ -1,4 +1,4 @@
-name: Deploy Application Youtube
+name: Deploy Application WBio
 
 on:
     push:
