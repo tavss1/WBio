@@ -4,8 +4,8 @@
         <p class="nomePopular">{{animal.nomePopular}}</p>
         <p class="especie">{{animal.especie}} {{animal.genero}}</p>
     </div>
-    <div class="acoes"> <!--Fazer esses botões sumirem quando o usuario não for um ADMIN-->
-        <button class="editar"> 
+    <div class="acoes" *ngIf="Admin"> <!--Fazer esses botões sumirem quando o usuario não for um ADMIN-->
+        <button class="editar" routerLink="/animais/editarAnimal/{{animal.id}}">
             <img src="editarAnimal.png" alt="Editar animal">
         </button>
 

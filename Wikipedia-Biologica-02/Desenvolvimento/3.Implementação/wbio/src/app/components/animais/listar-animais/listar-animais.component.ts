@@ -4,6 +4,7 @@ import { AnimalComponent } from "../animal/animal.component";
 import { Animal } from '../animal';
 import { AnimalService } from '../animal.service';
 import { AutenticacaoService } from '../../auth/login.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-listar-animais',
@@ -11,23 +12,29 @@ import { AutenticacaoService } from '../../auth/login.service';
   templateUrl: './listar-animais.component.html',
   styleUrl: './listar-animais.component.css'
 })
+
 export class ListarAnimaisComponent {
 
   listaAnimais : Animal[] = [];
 
-  constructor(private servico : AnimalService, private autenticateService : AutenticacaoService){}
+  public isAdminValue:boolean = false;
+
+  constructor(private servico : AnimalService, private autenticateService : AutenticacaoService){
+    this.isAdmin()
+  }
 
   ngOnInit() : void {
     this.servico.listar().subscribe((listaAnimais) => {
       this.listaAnimais = listaAnimais
-    });
-
-    this.autenticateService.checkAdmin()
+    }); 
   }
 
-  isAdmin() : string{
+  async isAdmin(){
 
-    return 'true'
+    (await this.autenticateService.checkAdmin()).subscribe({
+      next: () => {this.isAdminValue = true},
+      error: () => {this.isAdminValue = false}
+    })
 
   }
 

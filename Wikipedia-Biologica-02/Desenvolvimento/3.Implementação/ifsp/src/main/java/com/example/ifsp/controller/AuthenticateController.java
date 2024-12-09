@@ -51,6 +51,6 @@ public class AuthenticateController
 
     @GetMapping("/check")
     public ResponseEntity check() {
-        return ResponseEntity.ok("Sucesso");
+        return ResponseEntity.ok().build();
     }
 }

@@ -1,3 +1,4 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AutenticacaoService } from '../login.service';
@@ -16,11 +17,14 @@ export class LoginComponent {
     senha: ''
   }
 
-  constructor(private servico : AutenticacaoService, private toastservice : ToastrService){}
+  constructor(private servico : AutenticacaoService, 
+    private toastservice : ToastrService, 
+    private router: Router,
+    private route : ActivatedRoute){}
 
   login() : void {
     this.servico.login(this.credenciais.email, this.credenciais.senha).subscribe({
-      next: () => this.toastservice.success("Login feito com sucesso !"),
+      next: () => {this.toastservice.success("Login feito com sucesso !"); this.router.navigate(['/listarAnimais']); },
       error: () => this.toastservice.error("Erro ao realizar Login !")
     })
   }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { endWith, Observable } from 'rxjs';
 import { Animal } from './animal';
@@ -7,10 +7,23 @@ import { Animal } from './animal';
   providedIn: 'root'
 })
 export class AnimalService {
+  
 
-  private readonly API = "http://ec2-44-223-8-200.compute-1.amazonaws.com:8080"
+  private readonly API = "http://localhost:8080"
 
   constructor(private http : HttpClient) { }
+
+  editarAnimal(animal: Animal): Observable<Animal> {
+    var endpoint = "/animais/atualizarAnimal/"
+    const headerDict = {
+      'Authorization': 'Bearer ' + sessionStorage.getItem('auth-token'),
+    }
+    
+    const requestOptions = {                                                                                                                                                                                 
+      headers: new HttpHeaders(headerDict), 
+    };
+    return this.http.put<Animal>(this.API + endpoint + animal.id, animal, requestOptions)
+  }
 
   listar() : Observable<Animal[]> {
     var endpoint = "/animais"
@@ -24,7 +37,7 @@ export class AnimalService {
 
   
   cadastrarAnimal(animal: Animal): Observable<Animal>{
-    var endpoint = "/adicionarAnimal"
+    var endpoint = "/animais/adicionarAnimal"
     return this.http.post<Animal>(this.API + endpoint, animal)
   }
 }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { LoginResponse } from './autenticacao.type';
 import { tap } from 'rxjs';
@@ -8,7 +8,7 @@ import { tap } from 'rxjs';
 })
 export class AutenticacaoService {
 
-  private readonly API = "http://ec2-44-223-8-200.compute-1.amazonaws.com:8080"
+  private readonly API = "http://localhost:8080"
 
   constructor(private http : HttpClient) { }
 
@@ -22,7 +22,15 @@ export class AutenticacaoService {
     
   }
 
-  checkAdmin() {
-    console.log(this.http.get(this.API).subscribe((value) => value.toString))
+  async checkAdmin() {
+
+    const headerDict = {
+      'Authorization': 'Bearer ' + sessionStorage.getItem('auth-token'),
+    }
+    
+    const requestOptions = {                                                                                                                                                                                 
+      headers: new HttpHeaders(headerDict), 
+    };
+    return await this.http.get(this.API + "/auth/check", requestOptions)
   }
 }

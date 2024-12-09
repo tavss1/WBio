@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { Animal } from '../animal';
 import { FormsModule } from '@angular/forms';
 import { AnimalService } from '../animal.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-cadastrar-animal',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './cadastrar-animal.component.html',
   styleUrl: './cadastrar-animal.component.css'
 })
 export class CadastrarAnimalComponent {
   animal : Animal = {
-    id: 0,
     nomePopular: '',
     habitat: '',
     alimentacao: '',
@@ -27,10 +27,15 @@ export class CadastrarAnimalComponent {
     imagem: ''
   }
 
-  constructor(private service : AnimalService, private router : Router, private route : ActivatedRoute){}
+  constructor(private service : AnimalService, private router : Router, 
+    private route : ActivatedRoute,
+    private toastservice : ToastrService){}
 
   cadastrar() {
-    this.service.cadastrarAnimal(this.animal).subscribe()
+    this.service.cadastrarAnimal(this.animal).subscribe({
+      next: () => {this.toastservice.success("Animal cadastrado com sucesso!"); this.router.navigate(["listarAnimais"])},
+      error: () => {this.toastservice.error("Erro ao cadastrar Animal!");}
+    })
   }
 
 

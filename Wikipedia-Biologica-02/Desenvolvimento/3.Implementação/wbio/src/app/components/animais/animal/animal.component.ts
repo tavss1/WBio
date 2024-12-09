@@ -28,6 +28,10 @@ export class AnimalComponent {
     imagem: ''
   }
 
-  @Input() Admin = ''
+  @Input() Admin : boolean = false
+
+  remover() {
+    
+  }
 
 }

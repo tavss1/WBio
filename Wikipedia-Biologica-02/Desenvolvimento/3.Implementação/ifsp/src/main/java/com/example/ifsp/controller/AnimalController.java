@@ -64,7 +64,7 @@ public class AnimalController {
         return ResponseEntity.ok().body(dadosAnimal2);
     }
 
-    @PutMapping("/autalizarAnimal/{id}")
+    @PutMapping("/atualizarAnimal/{id}")
     public ResponseEntity<DadosAnimal2> alterarAnimal(@PathVariable Long id, @RequestBody DadosAnimal2 dadosAnimal2) {
         service.atualizarAnimal(id, dadosAnimal2);
         return ResponseEntity.ok().body(dadosAnimal2);
