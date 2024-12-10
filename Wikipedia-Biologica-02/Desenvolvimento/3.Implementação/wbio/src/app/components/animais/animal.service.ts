@@ -8,8 +8,7 @@ import { Animal } from './animal';
 })
 export class AnimalService {
   
-
-  private readonly API = "http://54.156.58.163:8080"
+  private readonly API = "http://localhost:8080"
 
   constructor(private http : HttpClient) { }
 
@@ -43,6 +42,11 @@ export class AnimalService {
 
   removerAnimal(animal: Animal){
      var endpoint = "/animais/removerAnimal"
-     return this.http.put(this.API + endpoint, animal)
+     return this.http.post(this.API + endpoint, animal)
+  }
+
+  pesquisarAnimais(nomePesquisa: string) {
+    var endpoint = "/animais/pesquisar/"
+    return this.http.get<Animal[]>(this.API + endpoint + nomePesquisa)
   }
 }

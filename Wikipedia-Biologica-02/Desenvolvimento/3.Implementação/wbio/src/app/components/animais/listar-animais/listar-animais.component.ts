@@ -5,10 +5,11 @@ import { Animal } from '../animal';
 import { AnimalService } from '../animal.service';
 import { AutenticacaoService } from '../../auth/login.service';
 import { Observable } from 'rxjs';
+import { FormsModule, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-listar-animais',
-  imports: [NgIf, AnimalComponent, NgFor],
+  imports: [NgIf, AnimalComponent, NgFor, FormsModule],
   templateUrl: './listar-animais.component.html',
   styleUrl: './listar-animais.component.css'
 })
@@ -16,6 +17,7 @@ import { Observable } from 'rxjs';
 export class ListarAnimaisComponent {
 
   listaAnimais : Animal[] = [];
+  nomePesquisa: string = '';
 
   public isAdminValue:boolean = false;
 
@@ -38,4 +40,24 @@ export class ListarAnimaisComponent {
 
   }
 
+  pesquisarAnimais() {
+    if (this.nomePesquisa) {
+      this.servico.pesquisarAnimais(this.nomePesquisa).subscribe(
+        (data: Animal[]) => {
+          this.listaAnimais = data;
+        },
+        (error: any) => {
+          console.error('Erro na pesquisa de animais', error);
+        }
+      );
+    } else {
+      // Se o campo de pesquisa estiver vazio, recarregue todos os animais
+      this.servico.listar().subscribe(
+        (data: Animal[]) => {
+          this.listaAnimais = data;
+        }
+      );
+    }
+
+  }
 }

@@ -70,7 +70,7 @@ public class AnimalController {
         return ResponseEntity.ok().body(dadosAnimal2);
     }
 
-    @PutMapping("/removerAnimal")
+    @PostMapping("/removerAnimal")
     public ResponseEntity<Animal> removerAnimal(@RequestBody DadosAnimal2 dadosAnimal2){
             service.removerAnimal(dadosAnimal2);
             return ResponseEntity.ok().build();

@@ -1,7 +1,7 @@
 <section class="container">
     <div class="pesquisar-animal">
         <img src="SearchIcon.png" alt="Icone pesquisa" width="20px" height="20">
-        <input type="text" name="pesquisarAnimal" id="pesquisarAnimal" class="input-pesquisar-animal">
+        <input type="text" name="pesquisarAnimal" id="pesquisarAnimal" class="input-pesquisar-animal" [(ngModel)]="nomePesquisa" (input)="pesquisarAnimais()" placeholder="Pesquise pelo nome do animal">
         <button class="filtrar-animais">Filtrar</button>
     </div>
 

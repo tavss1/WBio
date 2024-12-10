@@ -32,12 +32,13 @@ public class SecurityConfigurations {
                         requestMatchers(HttpMethod.GET, "/animais").permitAll().
                         requestMatchers(HttpMethod.POST, "/animais/adicionarAnimal").permitAll().
                         requestMatchers(HttpMethod.GET, "/animais/getDadosAnimal/**").permitAll().
+                        requestMatchers(HttpMethod.GET, "/animais/pesquisar/**").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/login").permitAll().
                         requestMatchers(HttpMethod.OPTIONS, "/**").permitAll().
                         requestMatchers(HttpMethod.POST, "/auth/register").permitAll().
                         requestMatchers(HttpMethod.GET, "/auth/check").hasRole("ADMIN").
                         requestMatchers(HttpMethod.PUT, "/animais/atualizarAnimal/**").hasRole("ADMIN").
-                        requestMatchers(HttpMethod.PUT, "/animais/removerAnimal/**").hasRole("ADMIN").
+                        requestMatchers(HttpMethod.POST, "/animais/removerAnimal").hasRole("ADMIN").
                         requestMatchers(HttpMethod.HEAD, "/auth/check").permitAll()
                         .anyRequest().authenticated()
                 )
