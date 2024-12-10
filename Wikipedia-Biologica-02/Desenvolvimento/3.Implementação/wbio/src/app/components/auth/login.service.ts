@@ -8,7 +8,7 @@ import { tap } from 'rxjs';
 })
 export class AutenticacaoService {
 
-  private readonly API = "http://localhost:8080"
+  private readonly API = "http://54.156.58.163:8080"
 
   constructor(private http : HttpClient) { }
 

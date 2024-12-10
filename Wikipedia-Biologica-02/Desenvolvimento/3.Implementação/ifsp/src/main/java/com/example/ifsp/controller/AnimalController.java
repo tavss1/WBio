@@ -70,9 +70,9 @@ public class AnimalController {
         return ResponseEntity.ok().body(dadosAnimal2);
     }
 
-    @PutMapping("/removerAnimal/{id}")
-    public ResponseEntity<Animal> removerAnimal(@PathVariable Long id){
-            service.removerAnimal(id);
+    @PutMapping("/removerAnimal")
+    public ResponseEntity<Animal> removerAnimal(@RequestBody DadosAnimal2 dadosAnimal2){
+            service.removerAnimal(dadosAnimal2);
             return ResponseEntity.ok().build();
     }
 

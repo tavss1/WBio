@@ -1,0 +1,47 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.linha-form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 20rem;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #03703c;
+    }
+
+    label {
+        font-weight: 700;
+    }
+}
+
+.botoes {
+    align-items: center;
+    justify-content: center;
+
+    button {
+        padding: 5px 20px;
+        cursor: pointer;
+        background-color: #03703c;
+        font-weight: 500;
+        color: white;
+        border: 1px solid black;
+    }
+
+    button:hover {
+        background-color: #01381E;
+    }
+}

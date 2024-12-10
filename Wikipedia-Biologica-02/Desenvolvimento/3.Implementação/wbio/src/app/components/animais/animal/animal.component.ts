@@ -1,7 +1,10 @@
 import { Component, Input, input } from '@angular/core';
 import { Animal } from '../animal';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { AnimalService } from '../animal.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-animal',
@@ -30,8 +33,13 @@ export class AnimalComponent {
 
   @Input() Admin : boolean = false
 
-  remover() {
-    
+  constructor(private service : AnimalService, private router: Router, private route : ActivatedRoute, private toastservice : ToastrService){}
+
+  remover(animal : Animal) {
+    this.service.removerAnimal(animal).subscribe({
+      next: () => {this.toastservice.success("Animal excluido com sucesso!"); this.router.navigate(["listarAnimais"])},
+      error: () => {this.toastservice.error("Erro ao excluir Animal!");}
+    })
   }
 
 }

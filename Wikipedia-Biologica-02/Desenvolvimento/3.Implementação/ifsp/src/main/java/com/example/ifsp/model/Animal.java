@@ -1,17 +1,14 @@
 package com.example.ifsp.model;
 
-import com.example.ifsp.repository.GeneroRepository;
-import com.example.ifsp.service.GeneroService;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name="animais")
 public class Animal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(unique = true)
     private String nomePopular;
@@ -79,11 +76,11 @@ public class Animal {
                 '}';
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

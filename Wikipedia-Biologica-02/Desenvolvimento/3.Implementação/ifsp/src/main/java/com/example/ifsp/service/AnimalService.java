@@ -77,8 +77,9 @@ public class AnimalService {
         animalRepository.save(animal);
     }
 
-    public void removerAnimal(Long id){
-        animalRepository.deleteById(id);
+    public void removerAnimal(DadosAnimal2 dadosAnimal2){
+        var animal = new Animal(dadosAnimal2, generoService.retornarGenero(dadosAnimal2));
+        animalRepository.deleteById((Long) animal.getId());
     }
 
     public void atualizarAnimal(Long id, DadosAnimal2 animal) {

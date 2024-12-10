@@ -53,6 +53,10 @@ public class Usuario implements UserDetails {
         return this.nome;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     @Override
     public boolean isAccountNonExpired() {
         return true;

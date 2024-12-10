@@ -1,7 +1,7 @@
 package com.example.ifsp.dto;
 
 public record AnimalDTO(
-         int id,
+         Long id,
 
          String nomePopular,
 
