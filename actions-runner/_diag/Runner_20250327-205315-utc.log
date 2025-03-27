@@ -1,0 +1,212 @@
+[2025-03-27 20:53:15Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner'
+[2025-03-27 20:53:15Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-03-27 20:53:15Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22631.
+[2025-03-27 20:53:15Z INFO Listener] Version: 2.323.0
+[2025-03-27 20:53:15Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-03-27 20:53:15Z INFO Listener] Culture: pt-BR
+[2025-03-27 20:53:15Z INFO Listener] UI Culture: pt-BR
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO Listener] Validating directory permissions for: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO CommandLineParser] Parse
+[2025-03-27 20:53:15Z INFO CommandLineParser] Parsing 1 args
+[2025-03-27 20:53:15Z INFO CommandLineParser] parsing argument
+[2025-03-27 20:53:15Z INFO CommandLineParser] HasArgs: False
+[2025-03-27 20:53:15Z INFO CommandLineParser] Adding Command: run
+[2025-03-27 20:53:15Z INFO Listener] Arguments parsed
+[2025-03-27 20:53:15Z INFO Runner] ExecuteCommand
+[2025-03-27 20:53:15Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Listener.dll
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] binPath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] RootFolder: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner_migrated'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner_migrated
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] CredFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_migrated'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_migrated
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'Service': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.service'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.service
+[2025-03-27 20:53:15Z INFO CommandSettings] Flag 'help': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Flag 'version': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Flag 'check': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Command 'configure': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Command 'remove': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-03-27 20:53:15Z INFO ConfigurationManager] LoadSettings
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsConfigured()
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-27 20:53:15Z INFO ConfigurationManager] Is configured: True
+[2025-03-27 20:53:15Z INFO ConfigurationStore] Read setting file: 292 chars
+[2025-03-27 20:53:15Z INFO ConfigurationManager] Settings Loaded
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-03-27 20:53:15Z INFO CommandSettings] Command 'run': 'True'
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsConfigured()
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-27 20:53:15Z INFO ConfigurationManager] Is configured: True
+[2025-03-27 20:53:15Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-03-27 20:53:15Z INFO Runner] Set runner startup type - Manual
+[2025-03-27 20:53:15Z INFO CommandSettings] Flag 'once': 'False'
+[2025-03-27 20:53:15Z INFO CommandSettings] Flag 'once': 'False'
+[2025-03-27 20:53:15Z INFO Runner] RunAsync
+[2025-03-27 20:53:15Z INFO ConfigurationManager] LoadSettings
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsConfigured()
+[2025-03-27 20:53:15Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-27 20:53:15Z INFO ConfigurationManager] Is configured: True
+[2025-03-27 20:53:15Z INFO ConfigurationManager] Settings Loaded
+[2025-03-27 20:53:15Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "SYHUNT",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/",
+  "GitHubUrl": "https://github.com/tavss1/WBio",
+  "WorkFolder": "_work"
+}
+[2025-03-27 20:53:15Z INFO MessageListener] Loading Credentials
+[2025-03-27 20:53:15Z INFO ConfigurationStore] HasCredentials()
+[2025-03-27 20:53:15Z INFO ConfigurationStore] stored True
+[2025-03-27 20:53:15Z INFO CredentialManager] GetCredentialProvider
+[2025-03-27 20:53:15Z INFO CredentialManager] Creating type OAuth
+[2025-03-27 20:53:15Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:15Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:53:15Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams'
+[2025-03-27 20:53:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:15Z INFO MessageListener] Attempt to create session.
+[2025-03-27 20:53:15Z INFO MessageListener] Connecting to the Runner Server...
+[2025-03-27 20:53:15Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:53:15Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-03-27 20:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:53:15Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:53:15Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:53:15Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:53:15Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:53:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:53:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:53:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:53:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:53:16Z INFO MessageListener] VssConnection created
+[2025-03-27 20:53:16Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:53:16Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:53:16Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:16Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:17Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:53:17Z INFO MessageListener] Session created.
+[2025-03-27 20:53:17Z INFO Terminal] WRITE LINE: Current runner version: '2.323.0'
+[2025-03-27 20:53:17Z INFO Terminal] WRITE LINE: 2025-03-27 20:53:17Z: Listening for Jobs
+[2025-03-27 20:53:17Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-03-27 20:53:17Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:53:34Z INFO MessageListener] Message '3911490702097463919' received from session '5d66dba6-a5cb-42f2-a2b0-ac3abf9ce16d'.
+[2025-03-27 20:53:34Z INFO ConfigurationStore] HasCredentials()
+[2025-03-27 20:53:34Z INFO ConfigurationStore] stored True
+[2025-03-27 20:53:34Z INFO CredentialManager] GetCredentialProvider
+[2025-03-27 20:53:34Z INFO CredentialManager] Creating type OAuth
+[2025-03-27 20:53:34Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-27 20:53:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:35Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:53:36Z INFO JobDispatcher] Job request 0 for plan fb491b3b-086d-4411-99d1-18c1b1146d95 job 0fb13432-196c-5bf5-acee-ad1c24722928 received.
+[2025-03-27 20:53:36Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-27 20:53:36Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-27 20:53:36Z INFO Terminal] WRITE LINE: 2025-03-27 20:53:36Z: Running job: build
+[2025-03-27 20:53:36Z INFO JobDispatcher] Start renew job request 0 for job 0fb13432-196c-5bf5-acee-ad1c24722928.
+[2025-03-27 20:53:36Z INFO JobDispatcher] Successfully renew job 0fb13432-196c-5bf5-acee-ad1c24722928, job is valid till 27/03/2025 21:03:36
+[2025-03-27 20:53:36Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Worker.exe'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2340 2352'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-27 20:53:36Z INFO ProcessInvokerWrapper] Process started with process id 21248, waiting for process exit.
+[2025-03-27 20:53:36Z INFO JobDispatcher] Send job request message to worker for job 0fb13432-196c-5bf5-acee-ad1c24722928.
+[2025-03-27 20:53:36Z INFO ProcessChannel] Sending message of length 18430, with hash 'eba057a58e0b37dcc555646cd1ce619d1c2a00be63dc74fd4d2c984f28ac49ab'
+[2025-03-27 20:53:36Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-27 20:53:36Z INFO JobNotification] Entering StartMonitor
+[2025-03-27 20:53:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:53:51Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:53:51Z INFO ProcessInvokerWrapper] Finished process 21248 with exit code 100, and elapsed time 00:00:14.3187713.
+[2025-03-27 20:53:51Z INFO JobDispatcher] Worker finished for job 0fb13432-196c-5bf5-acee-ad1c24722928. Code: 100
+[2025-03-27 20:53:51Z INFO JobDispatcher] finish job request for job 0fb13432-196c-5bf5-acee-ad1c24722928 with result: Succeeded
+[2025-03-27 20:53:51Z INFO Terminal] WRITE LINE: 2025-03-27 20:53:51Z: Job build completed with result: Succeeded
+[2025-03-27 20:53:51Z INFO JobDispatcher] Stop renew job request for job 0fb13432-196c-5bf5-acee-ad1c24722928.
+[2025-03-27 20:53:51Z INFO JobDispatcher] job renew has been cancelled, stop renew job 0fb13432-196c-5bf5-acee-ad1c24722928.
+[2025-03-27 20:53:51Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-27 20:53:51Z INFO JobNotification] Entering EndMonitor
+[2025-03-27 20:53:51Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-27 20:53:51Z INFO MessageListener] Message '7688510955790924873' received from session '5d66dba6-a5cb-42f2-a2b0-ac3abf9ce16d'.
+[2025-03-27 20:53:51Z INFO ConfigurationStore] HasCredentials()
+[2025-03-27 20:53:51Z INFO ConfigurationStore] stored True
+[2025-03-27 20:53:51Z INFO CredentialManager] GetCredentialProvider
+[2025-03-27 20:53:51Z INFO CredentialManager] Creating type OAuth
+[2025-03-27 20:53:51Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-27 20:53:51Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:51Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:51Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:53:51Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:53:52Z INFO JobDispatcher] Job request 0 for plan f9aedfe1-9d1c-4a2b-b563-581b6fab6e83 job 733cc7bc-b955-5295-a89b-7bf165334cde received.
+[2025-03-27 20:53:52Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-27 20:53:52Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-27 20:53:52Z INFO JobDispatcher] Job request 0fb13432-196c-5bf5-acee-ad1c24722928 processed succeed.
+[2025-03-27 20:53:52Z INFO Terminal] WRITE LINE: 2025-03-27 20:53:52Z: Running job: build
+[2025-03-27 20:53:52Z INFO JobDispatcher] Start renew job request 0 for job 733cc7bc-b955-5295-a89b-7bf165334cde.
+[2025-03-27 20:53:52Z INFO JobDispatcher] Successfully renew job 733cc7bc-b955-5295-a89b-7bf165334cde, job is valid till 27/03/2025 21:03:53
+[2025-03-27 20:53:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Worker.exe'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1868 2456'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-27 20:53:52Z INFO ProcessInvokerWrapper] Process started with process id 25540, waiting for process exit.
+[2025-03-27 20:53:52Z INFO JobDispatcher] Send job request message to worker for job 733cc7bc-b955-5295-a89b-7bf165334cde.
+[2025-03-27 20:53:52Z INFO ProcessChannel] Sending message of length 18404, with hash '7d3bc6b0dabbd55c031349d8d2a63b0cdc2c6c650cf3d8ce251074897cca434d'
+[2025-03-27 20:53:53Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-27 20:53:53Z INFO JobNotification] Entering StartMonitor
+[2025-03-27 20:54:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:54:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:54:14Z INFO ProcessInvokerWrapper] Finished process 25540 with exit code 102, and elapsed time 00:00:21.7158121.
+[2025-03-27 20:54:14Z INFO JobDispatcher] Worker finished for job 733cc7bc-b955-5295-a89b-7bf165334cde. Code: 102
+[2025-03-27 20:54:14Z INFO JobDispatcher] finish job request for job 733cc7bc-b955-5295-a89b-7bf165334cde with result: Failed
+[2025-03-27 20:54:14Z INFO Terminal] WRITE LINE: 2025-03-27 20:54:14Z: Job build completed with result: Failed
+[2025-03-27 20:54:14Z INFO JobDispatcher] Stop renew job request for job 733cc7bc-b955-5295-a89b-7bf165334cde.
+[2025-03-27 20:54:14Z INFO JobDispatcher] job renew has been cancelled, stop renew job 733cc7bc-b955-5295-a89b-7bf165334cde.
+[2025-03-27 20:54:14Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-27 20:54:14Z INFO JobNotification] Entering EndMonitor
+[2025-03-27 20:54:14Z INFO MessageListener] Received job status event. JobState: Online
