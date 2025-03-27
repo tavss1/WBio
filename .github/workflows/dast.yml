@@ -8,7 +8,7 @@ jobs:
     runs-on: [self-hosted, Windows, X64]
     steps:
       - uses: actions/checkout@v4
-      - run: Start-DynamicScan -target 'http://localhost:8080' -pfcond 'fail-if:risk=mediumup' -output 'report.pdf'
+      - run: ScanURL -target 'http://localhost:8080' -pfcond 'fail-if:risk=mediumup' -output 'report.pdf'
       - name: 'Syhunt Report'
         uses: actions/upload-artifact@v4
         if: failure()
