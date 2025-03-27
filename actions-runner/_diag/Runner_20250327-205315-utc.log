@@ -210,3 +210,101 @@
 [2025-03-27 20:54:14Z INFO JobNotification] Entering JobCompleted Notification
 [2025-03-27 20:54:14Z INFO JobNotification] Entering EndMonitor
 [2025-03-27 20:54:14Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-27 20:55:38Z INFO MessageListener] Message '1757772333834739067' received from session '5d66dba6-a5cb-42f2-a2b0-ac3abf9ce16d'.
+[2025-03-27 20:55:38Z INFO ConfigurationStore] HasCredentials()
+[2025-03-27 20:55:38Z INFO ConfigurationStore] stored True
+[2025-03-27 20:55:38Z INFO CredentialManager] GetCredentialProvider
+[2025-03-27 20:55:38Z INFO CredentialManager] Creating type OAuth
+[2025-03-27 20:55:38Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-27 20:55:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:39Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:55:39Z INFO JobDispatcher] Job request 0 for plan 4e046f43-2d19-49fc-86f9-62922bf27370 job 1fb52eb2-8165-5e0e-b849-85ccf129ab03 received.
+[2025-03-27 20:55:39Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-27 20:55:39Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-27 20:55:39Z INFO JobDispatcher] Job request 733cc7bc-b955-5295-a89b-7bf165334cde processed succeed.
+[2025-03-27 20:55:39Z INFO Terminal] WRITE LINE: 2025-03-27 20:55:39Z: Running job: build
+[2025-03-27 20:55:39Z INFO JobDispatcher] Start renew job request 0 for job 1fb52eb2-8165-5e0e-b849-85ccf129ab03.
+[2025-03-27 20:55:40Z INFO JobDispatcher] Successfully renew job 1fb52eb2-8165-5e0e-b849-85ccf129ab03, job is valid till 27/03/2025 21:05:40
+[2025-03-27 20:55:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Worker.exe'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2348 2448'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-27 20:55:40Z INFO ProcessInvokerWrapper] Process started with process id 1448, waiting for process exit.
+[2025-03-27 20:55:40Z INFO JobDispatcher] Send job request message to worker for job 1fb52eb2-8165-5e0e-b849-85ccf129ab03.
+[2025-03-27 20:55:40Z INFO ProcessChannel] Sending message of length 18494, with hash 'fb5be233993cf79c3bd4ef988c0a49b8e28bdcaedaf6b595d20557fddce9f65b'
+[2025-03-27 20:55:40Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-27 20:55:40Z INFO JobNotification] Entering StartMonitor
+[2025-03-27 20:55:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:55:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:55:55Z INFO ProcessInvokerWrapper] Finished process 1448 with exit code 100, and elapsed time 00:00:15.1556107.
+[2025-03-27 20:55:55Z INFO JobDispatcher] Worker finished for job 1fb52eb2-8165-5e0e-b849-85ccf129ab03. Code: 100
+[2025-03-27 20:55:55Z INFO JobDispatcher] finish job request for job 1fb52eb2-8165-5e0e-b849-85ccf129ab03 with result: Succeeded
+[2025-03-27 20:55:55Z INFO Terminal] WRITE LINE: 2025-03-27 20:55:55Z: Job build completed with result: Succeeded
+[2025-03-27 20:55:55Z INFO JobDispatcher] Stop renew job request for job 1fb52eb2-8165-5e0e-b849-85ccf129ab03.
+[2025-03-27 20:55:55Z INFO JobDispatcher] job renew has been cancelled, stop renew job 1fb52eb2-8165-5e0e-b849-85ccf129ab03.
+[2025-03-27 20:55:55Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-27 20:55:55Z INFO JobNotification] Entering EndMonitor
+[2025-03-27 20:55:55Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-27 20:55:55Z INFO MessageListener] Message '2095760722332942402' received from session '5d66dba6-a5cb-42f2-a2b0-ac3abf9ce16d'.
+[2025-03-27 20:55:55Z INFO ConfigurationStore] HasCredentials()
+[2025-03-27 20:55:55Z INFO ConfigurationStore] stored True
+[2025-03-27 20:55:55Z INFO CredentialManager] GetCredentialProvider
+[2025-03-27 20:55:55Z INFO CredentialManager] Creating type OAuth
+[2025-03-27 20:55:55Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-27 20:55:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:55:56Z INFO JobDispatcher] Job request 0 for plan c2b2ae12-4b87-4bb2-b0ce-08e416c03efd job 4cbbcaca-01f1-577f-9af1-1daae8330337 received.
+[2025-03-27 20:55:56Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-03-27 20:55:56Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-03-27 20:55:56Z INFO JobDispatcher] Job request 1fb52eb2-8165-5e0e-b849-85ccf129ab03 processed succeed.
+[2025-03-27 20:55:56Z INFO Terminal] WRITE LINE: 2025-03-27 20:55:56Z: Running job: build
+[2025-03-27 20:55:56Z INFO JobDispatcher] Start renew job request 0 for job 4cbbcaca-01f1-577f-9af1-1daae8330337.
+[2025-03-27 20:55:57Z INFO JobDispatcher] Successfully renew job 4cbbcaca-01f1-577f-9af1-1daae8330337, job is valid till 27/03/2025 21:05:57
+[2025-03-27 20:55:57Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper] Starting process:
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Worker.exe'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2524 2536'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-03-27 20:55:57Z INFO ProcessInvokerWrapper] Process started with process id 6560, waiting for process exit.
+[2025-03-27 20:55:57Z INFO JobDispatcher] Send job request message to worker for job 4cbbcaca-01f1-577f-9af1-1daae8330337.
+[2025-03-27 20:55:57Z INFO ProcessChannel] Sending message of length 18404, with hash '7b5f4b55781de75c75f56192bef02363691b461dea1712c0fe25a52e017208a0'
+[2025-03-27 20:55:57Z INFO JobNotification] Entering JobStarted Notification
+[2025-03-27 20:55:57Z INFO JobNotification] Entering StartMonitor
+[2025-03-27 20:56:19Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:56:19Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-03-27 20:56:19Z INFO ProcessInvokerWrapper] Finished process 6560 with exit code 102, and elapsed time 00:00:22.7013757.
+[2025-03-27 20:56:19Z INFO JobDispatcher] Worker finished for job 4cbbcaca-01f1-577f-9af1-1daae8330337. Code: 102
+[2025-03-27 20:56:19Z INFO JobDispatcher] finish job request for job 4cbbcaca-01f1-577f-9af1-1daae8330337 with result: Failed
+[2025-03-27 20:56:19Z INFO Terminal] WRITE LINE: 2025-03-27 20:56:19Z: Job build completed with result: Failed
+[2025-03-27 20:56:19Z INFO JobDispatcher] Stop renew job request for job 4cbbcaca-01f1-577f-9af1-1daae8330337.
+[2025-03-27 20:56:19Z INFO JobDispatcher] job renew has been cancelled, stop renew job 4cbbcaca-01f1-577f-9af1-1daae8330337.
+[2025-03-27 20:56:19Z INFO JobNotification] Entering JobCompleted Notification
+[2025-03-27 20:56:19Z INFO JobNotification] Entering EndMonitor
+[2025-03-27 20:56:19Z INFO MessageListener] Received job status event. JobState: Online
+[2025-03-27 20:56:48Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2025-03-27 20:56:48Z WARN GitHubActionsService] GET request to https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/_apis/distributedtask/pools/1/messages?sessionId=5d66dba6-a5cb-42f2-a2b0-ac3abf9ce16d&lastMessageId=2095760722332942402&status=Online&runnerVersion=2.323.0&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2025-03-27 20:56:48Z INFO MessageListener] Get next message has been cancelled.
+[2025-03-27 20:56:48Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2025-03-27 20:56:48Z INFO JobDispatcher] Ensure WorkerDispatcher for job 4cbbcaca-01f1-577f-9af1-1daae8330337 run to finish, cancel any running job.
+[2025-03-27 20:56:48Z INFO JobDispatcher] Job request 4cbbcaca-01f1-577f-9af1-1daae8330337 processed succeed.
+[2025-03-27 20:56:48Z INFO Runner] Deleting Runner Session...
+[2025-03-27 20:56:48Z INFO Listener] Runner execution been cancelled.

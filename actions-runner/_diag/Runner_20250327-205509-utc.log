@@ -1,0 +1,219 @@
+[2025-03-27 20:55:09Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner'
+[2025-03-27 20:55:09Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-03-27 20:55:09Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22631.
+[2025-03-27 20:55:09Z INFO Listener] Version: 2.323.0
+[2025-03-27 20:55:09Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-03-27 20:55:09Z INFO Listener] Culture: pt-BR
+[2025-03-27 20:55:09Z INFO Listener] UI Culture: pt-BR
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO Listener] Validating directory permissions for: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO CommandLineParser] Parse
+[2025-03-27 20:55:09Z INFO CommandLineParser] Parsing 1 args
+[2025-03-27 20:55:09Z INFO CommandLineParser] parsing argument
+[2025-03-27 20:55:09Z INFO CommandLineParser] HasArgs: False
+[2025-03-27 20:55:09Z INFO CommandLineParser] Adding Command: run
+[2025-03-27 20:55:09Z INFO Listener] Arguments parsed
+[2025-03-27 20:55:09Z INFO Runner] ExecuteCommand
+[2025-03-27 20:55:09Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Listener.dll
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] binPath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] RootFolder: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner_migrated'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner_migrated
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] CredFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_migrated'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_migrated
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'Service': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.service'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.service
+[2025-03-27 20:55:09Z INFO CommandSettings] Flag 'help': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Flag 'version': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Flag 'check': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Command 'configure': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Command 'remove': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-03-27 20:55:09Z INFO ConfigurationManager] LoadSettings
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsConfigured()
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-27 20:55:09Z INFO ConfigurationManager] Is configured: True
+[2025-03-27 20:55:09Z INFO ConfigurationStore] Read setting file: 292 chars
+[2025-03-27 20:55:09Z INFO ConfigurationManager] Settings Loaded
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-03-27 20:55:09Z INFO CommandSettings] Command 'run': 'True'
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsConfigured()
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-27 20:55:09Z INFO ConfigurationManager] Is configured: True
+[2025-03-27 20:55:09Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-03-27 20:55:09Z INFO Runner] Set runner startup type - Manual
+[2025-03-27 20:55:09Z INFO CommandSettings] Flag 'once': 'False'
+[2025-03-27 20:55:09Z INFO CommandSettings] Flag 'once': 'False'
+[2025-03-27 20:55:09Z INFO Runner] RunAsync
+[2025-03-27 20:55:09Z INFO ConfigurationManager] LoadSettings
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsConfigured()
+[2025-03-27 20:55:09Z INFO ConfigurationStore] IsConfigured: True
+[2025-03-27 20:55:09Z INFO ConfigurationManager] Is configured: True
+[2025-03-27 20:55:09Z INFO ConfigurationManager] Settings Loaded
+[2025-03-27 20:55:09Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "SYHUNT",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/",
+  "GitHubUrl": "https://github.com/tavss1/WBio",
+  "WorkFolder": "_work"
+}
+[2025-03-27 20:55:09Z INFO MessageListener] Loading Credentials
+[2025-03-27 20:55:09Z INFO ConfigurationStore] HasCredentials()
+[2025-03-27 20:55:09Z INFO ConfigurationStore] stored True
+[2025-03-27 20:55:09Z INFO CredentialManager] GetCredentialProvider
+[2025-03-27 20:55:09Z INFO CredentialManager] Creating type OAuth
+[2025-03-27 20:55:09Z INFO CredentialManager] Creating credential type: OAuth
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 20:55:09Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 20:55:09Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams'
+[2025-03-27 20:55:09Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:09Z INFO MessageListener] Attempt to create session.
+[2025-03-27 20:55:09Z INFO MessageListener] Connecting to the Runner Server...
+[2025-03-27 20:55:09Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:55:09Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-03-27 20:55:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:55:09Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:55:09Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:55:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:55:09Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:55:09Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:55:09Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:55:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:55:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:55:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:55:09Z INFO MessageListener] VssConnection created
+[2025-03-27 20:55:09Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:55:09Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:55:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_rsaparams
+[2025-03-27 20:55:10Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-03-27 20:55:10Z ERR  GitHubActionsService] POST request to https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/_apis/distributedtask/pools/1/sessions failed. HTTP Status: Conflict
+[2025-03-27 20:55:10Z ERR  MessageListener] Catch exception during create session.
+[2025-03-27 20:55:10Z ERR  MessageListener] GitHub.DistributedTask.WebApi.TaskAgentSessionConflictException: The actions runner SYHUNT already has an active session.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.CreateSessionAsync(CancellationToken token)
+[2025-03-27 20:55:10Z INFO MessageListener] The session for this runner already exists.
+[2025-03-27 20:55:10Z ERR  Terminal] WRITE ERROR: A session for this runner already exists.
+[2025-03-27 20:55:10Z INFO MessageListener] The session conflict exception haven't reached retry limit.
+[2025-03-27 20:55:10Z ERR  Terminal] WRITE ERROR: 2025-03-27 20:55:10Z: Runner connect error: The actions runner SYHUNT already has an active session.. Retrying until reconnected.
+[2025-03-27 20:55:10Z INFO MessageListener] Sleeping for 30 seconds before retrying.
+[2025-03-27 20:55:40Z INFO MessageListener] Attempt to create session.
+[2025-03-27 20:55:40Z INFO MessageListener] Connecting to the Runner Server...
+[2025-03-27 20:55:40Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:55:40Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-03-27 20:55:40Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:55:40Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:55:40Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:55:40Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:55:40Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:55:40Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:55:40Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:55:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:55:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:55:41Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:55:41Z INFO MessageListener] VssConnection created
+[2025-03-27 20:55:41Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:55:41Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:55:41Z ERR  GitHubActionsService] POST request to https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/_apis/distributedtask/pools/1/sessions failed. HTTP Status: Conflict
+[2025-03-27 20:55:41Z ERR  MessageListener] Catch exception during create session.
+[2025-03-27 20:55:41Z ERR  MessageListener] GitHub.DistributedTask.WebApi.TaskAgentSessionConflictException: The actions runner SYHUNT already has an active session.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.CreateSessionAsync(CancellationToken token)
+[2025-03-27 20:55:41Z INFO MessageListener] The session for this runner already exists.
+[2025-03-27 20:55:41Z ERR  Terminal] WRITE ERROR: A session for this runner already exists.
+[2025-03-27 20:55:41Z INFO MessageListener] The session conflict exception haven't reached retry limit.
+[2025-03-27 20:55:41Z INFO MessageListener] Sleeping for 30 seconds before retrying.
+[2025-03-27 20:56:11Z INFO MessageListener] Attempt to create session.
+[2025-03-27 20:56:11Z INFO MessageListener] Connecting to the Runner Server...
+[2025-03-27 20:56:11Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:56:11Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-03-27 20:56:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:56:11Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:56:11Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:56:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:56:11Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:56:11Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:56:11Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:56:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:56:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:56:12Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:56:12Z INFO MessageListener] VssConnection created
+[2025-03-27 20:56:12Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:56:12Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:56:12Z ERR  GitHubActionsService] POST request to https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/_apis/distributedtask/pools/1/sessions failed. HTTP Status: Conflict
+[2025-03-27 20:56:12Z ERR  MessageListener] Catch exception during create session.
+[2025-03-27 20:56:12Z ERR  MessageListener] GitHub.DistributedTask.WebApi.TaskAgentSessionConflictException: The actions runner SYHUNT already has an active session.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.CreateSessionAsync(CancellationToken token)
+[2025-03-27 20:56:12Z INFO MessageListener] The session for this runner already exists.
+[2025-03-27 20:56:12Z ERR  Terminal] WRITE ERROR: A session for this runner already exists.
+[2025-03-27 20:56:12Z INFO MessageListener] The session conflict exception haven't reached retry limit.
+[2025-03-27 20:56:12Z INFO MessageListener] Sleeping for 30 seconds before retrying.
+[2025-03-27 20:56:42Z INFO MessageListener] Attempt to create session.
+[2025-03-27 20:56:42Z INFO MessageListener] Connecting to the Runner Server...
+[2025-03-27 20:56:42Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:56:42Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-03-27 20:56:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:56:42Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:56:42Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:56:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:56:42Z INFO RunnerServer] EstablishVssConnection
+[2025-03-27 20:56:42Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-03-27 20:56:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-03-27 20:56:42Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:56:42Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:56:42Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-03-27 20:56:42Z INFO MessageListener] VssConnection created
+[2025-03-27 20:56:42Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:56:42Z INFO Terminal] WRITE LINE: 
+[2025-03-27 20:56:42Z ERR  GitHubActionsService] POST request to https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/_apis/distributedtask/pools/1/sessions failed. HTTP Status: Conflict
+[2025-03-27 20:56:42Z ERR  MessageListener] Catch exception during create session.
+[2025-03-27 20:56:42Z ERR  MessageListener] GitHub.DistributedTask.WebApi.TaskAgentSessionConflictException: The actions runner SYHUNT already has an active session.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.CreateSessionAsync(CancellationToken token)
+[2025-03-27 20:56:42Z INFO MessageListener] The session for this runner already exists.
+[2025-03-27 20:56:42Z ERR  Terminal] WRITE ERROR: A session for this runner already exists.
+[2025-03-27 20:56:42Z INFO MessageListener] The session conflict exception haven't reached retry limit.
+[2025-03-27 20:56:42Z INFO MessageListener] Sleeping for 30 seconds before retrying.
+[2025-03-27 20:56:45Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2025-03-27 20:56:45Z INFO Listener] Runner execution been cancelled.
