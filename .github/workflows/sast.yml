@@ -8,7 +8,7 @@ jobs:
     runs-on: [self-hosted, Windows, X64]
     steps:
       - uses: actions/checkout@v4
-      - run: ScanCode -target "C:\Users\Bruno\OneDrive\Área de Trabalho\WBio" -pfcond 'fail-if:risk=mediumup' -output 'report.pdf'
+      - run: ScanCode -pfcond "medium" -output 'report.pdf'
       - name: 'Syhunt Report'
         uses: actions/upload-artifact@v4
         if: failure()
