@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "SYHUNT",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/",
+  "gitHubUrl": "https://github.com/tavss1/WBio",
+  "workFolder": "_work"
+}
