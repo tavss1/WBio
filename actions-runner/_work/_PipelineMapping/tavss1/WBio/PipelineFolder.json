@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "tavss1/WBio",
+  "pipelineDirectory": "WBio",
+  "workspaceDirectory": "WBio\\WBio",
+  "repositories": {
+    "tavss1/WBio": {
+      "repositoryPath": "WBio\\WBio",
+      "lastRunOn": "03/27/2025 15:54:03 -03:00"
+    }
+  },
+  "lastRunOn": "03/27/2025 15:54:10 -03:00"
+}

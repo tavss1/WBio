@@ -1,0 +1,1382 @@
+[2025-03-27 18:54:10Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner'
+[2025-03-27 18:54:10Z INFO Worker] Version: 2.323.0
+[2025-03-27 18:54:10Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-03-27 18:54:10Z INFO Worker] Culture: pt-BR
+[2025-03-27 18:54:10Z INFO Worker] UI Culture: pt-BR
+[2025-03-27 18:54:10Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-03-27 18:54:10Z INFO ProcessChannel] Receiving message of length 18404, with hash '2c90ce3a66a95bc2084e87b061869035859b8476902814db0ad877c122008478'
+[2025-03-27 18:54:10Z INFO Worker] Message received.
+[2025-03-27 18:54:10Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/dast.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "04dad4f5-e265-4526-ae40-7f927b1c2132",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 11,
+              "col": 14,
+              "lit": "Start-DynamicScan -target 'http://localhost:8080' -pfcond 'fail-if:risk=mediumup' -output 'report.pdf'"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "486f5471-92b8-453f-91f9-214d7916920a",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/upload-artifact",
+        "ref": "v2",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 12,
+        "col": 15,
+        "lit": "Syhunt Report"
+      },
+      "contextName": "__actions_upload-artifact",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 16,
+        "col": 10,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 16,
+              "col": 10,
+              "lit": "name"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 16,
+              "col": 16,
+              "lit": "syhunt-report"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 10,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 16,
+              "lit": "report.pdf"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 10,
+              "lit": "if-no-files-found"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 29,
+              "lit": "error"
+            }
+          }
+        ]
+      },
+      "condition": "failure()",
+      "id": "a4a3cb64-a2b9-4623-9a58-409a7d4665e2",
+      "name": "__actions_upload-artifact"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "be4b9dae-a473-4fb3-bb0b-239620615855.build.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "be4b9dae-a473-4fb3-bb0b-239620615855",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "be4b9dae-a473-4fb3-bb0b-239620615855",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "baaace81-3232-5aa7-a11b-65746846a19b",
+  "jobDisplayName": "build",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://acghubeus1.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus26.actions.githubusercontent.com/V4WiDYvNxDZ5Eu26SZTDhlIpE4goOL8PmullF7tTCHnqevgtXO/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-3-azure-eastus.actions.githubusercontent.com/28/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+        },
+        {
+          "k": "repository",
+          "v": "tavss1/WBio"
+        },
+        {
+          "k": "repository_owner",
+          "v": "tavss1"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "104276949"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/tavss1/WBio.git"
+        },
+        {
+          "k": "run_id",
+          "v": "14114522106"
+        },
+        {
+          "k": "run_number",
+          "v": "1"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "104276949"
+        },
+        {
+          "k": "actor",
+          "v": "tavss1"
+        },
+        {
+          "k": "workflow",
+          "v": "syhunt test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "6ea9d0b7b415f2fe7bfcb985f2007ca30aac2f96"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "brunozzt99@outlook.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Bruno Tavares"
+                              },
+                              {
+                                "k": "username",
+                                "v": "tavss1"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "brunozzt99@outlook.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Bruno Tavares"
+                              },
+                              {
+                                "k": "username",
+                                "v": "tavss1"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+                        },
+                        {
+                          "k": "message",
+                          "v": "test syhunt"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-03-27T15:53:34-03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "12d89d0e86ff36422c6df171403cc71cbbf15f2e"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/tavss1/WBio/commit/e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/tavss1/WBio/compare/6ea9d0b7b415...e2dc69ef48aa"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "brunozzt99@outlook.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Bruno Tavares"
+                          },
+                          {
+                            "k": "username",
+                            "v": "tavss1"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "brunozzt99@outlook.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Bruno Tavares"
+                          },
+                          {
+                            "k": "username",
+                            "v": "tavss1"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+                    },
+                    {
+                      "k": "message",
+                      "v": "test syhunt"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-03-27T15:53:34-03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "12d89d0e86ff36422c6df171403cc71cbbf15f2e"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/tavss1/WBio/commit/e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "104276949+tavss1@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "tavss1"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/tavss1/WBio.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1727263504.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Projeto acadêmico Full Stack"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "tavss1/WBio"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/tavss1/WBio.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/tavss1/WBio"
+                    },
+                    {
+                      "k": "id",
+                      "v": 862897104.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Java"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "WBio"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOM27D0A"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/104276949?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "104276949+tavss1@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/tavss1/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/tavss1/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/tavss1/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/tavss1/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/tavss1"
+                          },
+                          {
+                            "k": "id",
+                            "v": 104276949.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "tavss1"
+                          },
+                          {
+                            "k": "name",
+                            "v": "tavss1"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOBjcj1Q"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/tavss1/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/tavss1/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/tavss1/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/tavss1/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/tavss1/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/tavss1"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1743101638.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 28277.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:tavss1/WBio.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/tavss1/WBio"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/tavss1/WBio/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-03-27T18:30:27Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/tavss1/WBio"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 1.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/104276949?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/tavss1/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/tavss1/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/tavss1/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/tavss1/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/tavss1"
+                    },
+                    {
+                      "k": "id",
+                      "v": 104276949.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "tavss1"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOBjcj1Q"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/tavss1/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/tavss1/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/tavss1/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/tavss1/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/tavss1/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/tavss1"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "tavss1/WBio/.github/workflows/dast.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "e2dc69ef48aa2d962fd5eb03f4b7b4236dbe7a9d"
+        },
+        {
+          "k": "repository_id",
+          "v": "862897104"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "tavss1"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOBjcj1Q"
+}
+[2025-03-27 18:54:10Z INFO JobRunner] Job ID baaace81-3232-5aa7-a11b-65746846a19b
+[2025-03-27 18:54:10Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin\Runner.Worker.dll
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] binPath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] RootFolder: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'Runner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] ConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner_migrated'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.runner_migrated
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] CredFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_migrated'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials_migrated
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'Service': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.service'
+[2025-03-27 18:54:10Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.service
+[2025-03-27 18:54:10Z INFO ConfigurationStore] Read setting file: 292 chars
+[2025-03-27 18:54:10Z INFO JobRunner] Initializing launch client
+[2025-03-27 18:54:10Z INFO JobServerQueue] Initializing results client
+[2025-03-27 18:54:10Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-03-27 18:54:10Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-03-27 18:54:10Z INFO JobServerQueue] Start process web console line queue.
+[2025-03-27 18:54:10Z INFO JobServerQueue] Start process file upload queue.
+[2025-03-27 18:54:10Z INFO JobServerQueue] Start results file upload queue.
+[2025-03-27 18:54:10Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-03-27 18:54:10Z INFO JobServerQueue] Start process timeline update queue.
+[2025-03-27 18:54:10Z INFO ExecutionContext] Initialize GitHub context
+[2025-03-27 18:54:10Z INFO ExecutionContext] Initialize Env context
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag'
+[2025-03-27 18:54:10Z INFO JobRunner] Starting the job execution context.
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO JobRunner] Validating directory permissions for: 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Tools': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_tool'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Temp': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_temp'
+[2025-03-27 18:54:10Z INFO JobRunner] Getting job extension.
+[2025-03-27 18:54:10Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.credentials'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\.setup_info'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_PipelineMapping\tavss1/WBio\PipelineFolder.json
+[2025-03-27 18:54:10Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO JobExtension] Downloading actions
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:10Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_actions'
+[2025-03-27 18:54:10Z INFO Worker] Listening for cancel message from the channel.
+[2025-03-27 18:54:10Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-03-27 18:54:10Z INFO ResultServer] Successfully started websocket client.
+[2025-03-27 18:54:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f9bcb39d-91d7-4965-bc9b-05bde586d85e', success rate: 1/1.
+[2025-03-27 18:54:11Z ERR  GitHubActionsService] POST request to https://launch.actions.githubusercontent.com/actions/build/be4b9dae-a473-4fb3-bb0b-239620615855/jobs/baaace81-3232-5aa7-a11b-65746846a19b/runnerresolve/actions failed. HTTP Status: UnprocessableEntity
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_actions'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Work': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work'
+[2025-03-27 18:54:11Z INFO HostContext] Well known directory 'Actions': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_actions'
+[2025-03-27 18:54:11Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/ee0669bd1cc54295c223e0bb666b733df41de1c5' into C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_actions\_temp_ac6f682d-8b2b-4d01-a790-59a8e10789da\9c95604e-6981-4d7b-9d2e-41db5431bae9.zip.
+[2025-03-27 18:54:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f9bcb39d-91d7-4965-bc9b-05bde586d85e', success rate: 1/1.
+[2025-03-27 18:54:11Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-03-27 18:54:11Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/ee0669bd1cc54295c223e0bb666b733df41de1c5 X-GitHub-Request-Id: C940:18A68E:8234F:1202F9:67E59ED3 Http Status: OK
+[2025-03-27 18:54:11Z INFO ActionManager] Finished getting action repository.
+[2025-03-27 18:54:11Z ERR  JobExtension] Caught exception from JobExtension Initialization: System.Exception: Missing download info for actions/upload-artifact@v2
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2025-03-27 18:54:11Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "f9bcb39d-91d7-4965-bc9b-05bde586d85e",
+  "result": "failed",
+  "errorMessages": [
+    "Missing download info for actions/upload-artifact@v2"
+  ],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-03-27T18:54:10.4421147Z",
+  "finishTime": "2025-03-27T18:54:11.9753919Z"
+}.
+[2025-03-27 18:54:11Z ERR  JobRunner] Job initialize failed.
+[2025-03-27 18:54:11Z ERR  JobRunner] Caught exception from InitializeJob: System.Exception: Missing download info for actions/upload-artifact@v2
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsRecursiveAsync(IExecutionContext executionContext, PrepareActionsState state, IEnumerable`1 actions, Int32 depth, Guid parentStepId)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps, Guid rootStepId)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2025-03-27 18:54:11Z INFO JobRunner] Shutting down the job server queue.
+[2025-03-27 18:54:11Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-03-27 18:54:12Z INFO JobServerQueue] All queue process task stopped.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f9bcb39d-91d7-4965-bc9b-05bde586d85e', success rate: 1/1.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Web console line queue drained.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-03-27 18:54:12Z INFO JobServerQueue] File upload queue drained.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-03-27 18:54:12Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-03-27 18:54:12Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag\blocks\be4b9dae-a473-4fb3-bb0b-239620615855_f9bcb39d-91d7-4965-bc9b-05bde586d85e.1
+[2025-03-27 18:54:13Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-03-27 18:54:13Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag\blocks\be4b9dae-a473-4fb3-bb0b-239620615855_baaace81-3232-5aa7-a11b-65746846a19b.1
+[2025-03-27 18:54:13Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-03-27 18:54:13Z INFO JobServerQueue] Results upload queue drained.
+[2025-03-27 18:54:14Z INFO JobServerQueue] Timeline update queue drained.
+[2025-03-27 18:54:14Z INFO JobServerQueue] Disposing job server ...
+[2025-03-27 18:54:14Z INFO JobServerQueue] Disposing results server ...
+[2025-03-27 18:54:14Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-03-27 18:54:14Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_work\_temp
+[2025-03-27 18:54:14Z INFO HostContext] Well known directory 'Bin': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\bin'
+[2025-03-27 18:54:14Z INFO HostContext] Well known directory 'Root': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner'
+[2025-03-27 18:54:14Z INFO HostContext] Well known directory 'Diag': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag'
+[2025-03-27 18:54:14Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\Bruno\OneDrive\Área de Trabalho\WBio\actions-runner\_diag\.telemetry'
+[2025-03-27 18:54:14Z INFO JobRunner] Raising job completed against run service
+[2025-03-27 18:54:14Z INFO Worker] Job completed.
